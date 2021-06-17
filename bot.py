@@ -22,9 +22,11 @@ import json
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
-from dotenv import load_dotenv
+
 import os
+from dotenv import load_dotenv
 load_dotenv()
+
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -36,9 +38,9 @@ TOKEN = os.environ['BOT_TOKEN']
 robot = Bot(token=TOKEN)
 updater = Updater(token=TOKEN)
 
-debug = True
+debug = os.environ['DEBUG']
 
-if debug == True:
+if debug == "True":
     chat_id = os.environ['DEBUG_ID']
     interval = 1
 else:
@@ -46,6 +48,11 @@ else:
     interval = 2
 
 
+
+# print(TOKEN)
+
+# environment_vars = os.environ['DEBUG_ID']
+# print(environment_vars)
 
 def SendMessage(message):
     robot.send_message(chat_id=chat_id, text=str(message))
