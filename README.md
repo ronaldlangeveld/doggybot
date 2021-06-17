@@ -2,7 +2,7 @@
 
 Built this little telegram bot to remind the household to take out the dogs at certain times of the day to minimise the risk of accidents in the house.
 
-ENV VARIABLES
+## ENV VARIABLES
 
 ```
 GROUP_ID=telegram group ID
@@ -13,7 +13,7 @@ DEBUG=True
 ```
 
 
-#CRON STUFF IN UTC TIME ON MY UBUNTU SERVER
+## CRON STUFF IN UTC TIME ON MY UBUNTU SERVER
 
 ```
 
