@@ -1,6 +1,6 @@
 # Doggy poop schedule bot.
 
-Built this little telegram bot to remind my parents to take out the dogs at certain times of the day to minimise the risk of accidents in the house.
+Built this little telegram bot to remind the household to take out the dogs at certain times of the day to minimise the risk of accidents in the house.
 
 ENV VARIABLES
 
